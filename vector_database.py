@@ -17,7 +17,8 @@ def load_pdf(file_path):
     documents = loader.load()
     return documents
 
-file_path = 'universal_declaration_of_human_rights.pdf'
+# file_path = 'universal_declaration_of_human_rights.pdf'
+file_path = 'The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf'
 documents = load_pdf(file_path)
 
 # Step_2: Create Chunks
