@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI  # Changed from Groq
+from langchain_google_genai import ChatGoogleGenerativeAI  # using google_genai
 from vector_database import faiss_db
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-# Step_1: Setup LLM (Now using Google Gemini)
+# Step_1: Setup LLM
 llm_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # Step_2: Retrieve Docs 

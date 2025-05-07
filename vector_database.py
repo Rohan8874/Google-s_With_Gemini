@@ -1,6 +1,6 @@
 from langchain_community.document_loaders import PDFPlumberLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings  # Changed from Ollama
+from langchain_google_genai import GoogleGenerativeAIEmbeddings  # using google genai
 from langchain_community.vectorstores import FAISS
 import os
 
@@ -32,7 +32,7 @@ def create_chunks(documents):
 
 text_chunks = create_chunks(documents)
 
-# Step_3: Setup Embeddings Model (Now using Google Gemini)
+# Step_3: Setup Embeddings Model
 def get_embedding_model():
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return embeddings

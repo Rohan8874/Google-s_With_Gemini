@@ -1,7 +1,6 @@
 from rag_pipeline import answer_query, retrieve_docs, llm_model
 import streamlit as st
 
-# Initialize session state for conversation history
 if "conversation" not in st.session_state:
     st.session_state.conversation = []
 
