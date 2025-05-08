@@ -25,18 +25,18 @@ https://github.com/Rohan8874/Google-s_With_Gemini.git
 pip install -r requirements.txt
 ```
 ## Create .env file:
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+# Usage
+1. Place PDF documents in pdfs/ directory
 
-- env
-- GOOGLE_API_KEY=your_api_key_here
-- Usage
-- Place PDF documents in pdfs/ directory
-
-## Generate vector database:
+2. Generate vector database:
 
 ```bash
 python vector_database.py
 ```
-## Launch web interface:
+3. Launch web interface:
 
 ```bash
 streamlit run frontend.py
@@ -58,13 +58,15 @@ streamlit run frontend.py
 
 ```
 ## Configuration
-Parameter	Description	Default Value
-chunk_size	Document splitting size	1000 characters
-chunk_overlap	Overlap between chunks	200 characters
-embedding_model	Google embedding model	models/embedding-001
-llm_model	Google Generative AI model	gemini-2.0-flash
-## Troubleshooting
-Q: Getting "Missing PDF" error?
+
+| Parameter           | Description                  | Default Value          |
+|---------------------|------------------------------|------------------------|
+| `chunk_size`        | Document splitting size      | 1000 characters        |
+| `chunk_overlap`     | Overlap between chunks       | 200 characters         |
+| `embedding_model`   | Google embedding model       | `models/embedding-001` |
+| `llm_model`         | Google Generative AI model   | `gemini-2.0-flash`     |
+# Troubleshooting
+## Q: Getting "Missing PDF" error?
 
 Ensure file is in pdfs/ directory
 
@@ -82,5 +84,5 @@ Reduce chunk size in vector_database.py
 
 Use smaller PDF documents
 
-Known Limitations
+## Known Limitations
 Supports single PDF processing
