@@ -26,10 +26,10 @@ pip install -r requirements.txt
 ```
 ## Create .env file:
 
-env
-GOOGLE_API_KEY=your_api_key_here
-Usage
-Place PDF documents in pdfs/ directory
+- env
+- GOOGLE_API_KEY=your_api_key_here
+- Usage
+- Place PDF documents in pdfs/ directory
 
 ## Generate vector database:
 
@@ -41,13 +41,22 @@ python vector_database.py
 ```bash
 streamlit run frontend.py
 ```
+
 ## Project Structure
-.
+
+```
+
 ├── frontend.py            # Streamlit UI
+
 ├── rag_pipeline.py        # RAG processing
+
 ├── vector_database.py     # Vector DB management
+
 ├── requirements.txt       # Dependencies
+
 └── pdfs/                  # Document storage
+
+```
 ## Configuration
 Parameter	Description	Default Value
 chunk_size	Document splitting size	1000 characters
