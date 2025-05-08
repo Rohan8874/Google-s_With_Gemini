@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) system for legal document analysis, powered by Google Gemini and Streamlit.
 
+![Demo Screenshot](demo_site.png)
+
 ## Features
 - PDF document ingestion and processing
 - Natural language query interface
@@ -68,21 +70,23 @@ streamlit run frontend.py
 # Troubleshooting
 ## Q: Getting "Missing PDF" error?
 
-Ensure file is in pdfs/ directory
+- Ensure file is in pdfs/ directory
 
-Verify PDF is not password protected
+- Verify PDF is not password protected
 
 ## Q: API key not working?
 
-Check .env file formatting
+- Check .env file formatting
 
-Verify Google API permissions
+- Verify Google API permissions
 
 ## Q: Slow responses?
 
-Reduce chunk size in vector_database.py
+- Reduce chunk size in vector_database.py
 
-Use smaller PDF documents
+- Use smaller PDF documents
 
 ## Known Limitations
-Supports single PDF processing
+- Supports single PDF processing
+- Max PDF size: 50MB
+- English language only
