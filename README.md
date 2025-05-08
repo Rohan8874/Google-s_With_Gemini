@@ -17,3 +17,4 @@ A Retrieval-Augmented Generation (RAG) system for legal document analysis, power
 ## Installation
 1. Clone repository:
 ```bash
+https://github.com/Rohan8874/Google-s_With_Gemini.git
