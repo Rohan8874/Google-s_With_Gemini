@@ -2,7 +2,7 @@
 
 A Retrieval-Augmented Generation (RAG) system for legal document analysis, powered by Google Gemini and Streamlit.
 
-![Demo Screenshot](demo_site.png)
+![demo_site](demo_site.png)
 
 ## Features
 - PDF document ingestion and processing
